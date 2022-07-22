@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/68f00b8ed4.js" crossorigin="anonymous"></script>
+
+    <!-- Page Title -->
+    <title>Hammonton Soccer</title>
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="hsmvc.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/style.css" asp-append-version="true" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="announcements">
+            <p class="message">Fall Registration Begins 5/31</p>
+        </div>
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark navbarBg">
+        <div class="container-fluid mobileNav">
+                    <a a href="index.html" class="navbar-brand">
+                        <img src="images/hysa-logo.png" class="hysaLogo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto md-2 mb-lg-0">
+                            <div class="spacer-20"></div>
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">HOME</a>
+                            </li>
+                             <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">CLUB INFO</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a href="ourphilosophy.html" class="dropdown-item">OUR PHILOSOPHY</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="codeofconduct.html" class="dropdown-item">CODE OF CONDUCT</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="zerotolerancepolicy.html" class="dropdown-item">ZERO TOLERANCE POLICY</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="executiveboard.html" class="dropdown-item">EXECUTIVE BOARD</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="bylaws.html" class="dropdown-item">BY-LAWS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="volunteers.html" class="dropdown-item">VOLUNTEERS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">REC. PROGRAM</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U6">U6: Little Kickers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U7_8">U8: Pee Wee</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U9_10">U10: Mini-Novice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U11_13">U12: Novice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U11_13">U15: Senior</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="PracticeSchedules">PRACTICE SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="GameSchedules">GAME SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="Standings">STANDINGS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="RecreationalFAQ">RECREATIONAL FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">TRAVEL PROGRAM</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="RulesAndRegulations">Rules and Regulations</a>
+                                    </li>                                   
+                                   <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2006">BOYS 2006</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2008">BOYS 2008</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2009">BOYS 2009</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2010">BOYS 2010</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2011">BOYS 2011</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2012">BOYS 2012</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2013">BOYS 2013</a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Girls2010">GIRLS 2010</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Girls2011">GIRLS 2011</a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="PracticeSchedules">PRACTICE SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="GameSchedules">GAME SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="TryoutInformation">TRYOUT INFORMATION</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EDP TEAMS</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="EDPTeams" asp-action="ThreeLions">THREE LIONS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">COACHES</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="PracticeTips">PRACTICE TIPS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="EducationalResources">EDUCATIONAL RESOURCES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="Licensing">LICENSING</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="BoysTravelImportantDates">BOYS TRAVEL IMPORTANT DATES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="GirlsTravelImportantDates">GIRLS TRAVEL IMPORTANT DATES</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="fields.html" class="nav-link">FIELDS</a>
+                            </li>
+                        </ul>
+                        <div class="registerBtn">
+                            <a href="https://sports.bluesombrero.com/Default.aspx?tabid=595920" target="_blank">
+                                <button type="button" class="btn btn-primary">
+                                    <i class="fa-solid fa-user-plus"></i> FALL REGISTRATION
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+         <!-- <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">hsmvc</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <!-- body -->  
+            <div class="container">
+                <div class="spacer-20"></div>
+                <h1 class="text-center">Hammonton Soccer By-Laws</h1>
+                <div class="spacer-20"></div>
+                <p class="text-center">
+                    <strong>
+                    <u>Hammonton Youth Soccer Association</u><br>
+                    (A New Jersey Nonprofit Corporation)
+                    </strong>
+                </p>
+                    <p class="text-center">
+                    <strong>
+                    <u>ARTICLE I</u><br>
+                    (Names and Offices)
+                    </strong>
+                </p>
+                <div class="apa-reference">
+                    <p><span><strong><u>SECTION 1.</u></strong><em class="smText">&nbsp;<u>Name</u> </em></span> The name of this nonprofit corporation is HAMMONTON YOUTH SOCCER ASSOCIATION (HYSA), and shall also be known by such other name or names as the Board of Directors may designate from time to time.</p>
+                </div>
+                <div class="apa-reference">
+                    <p><span><strong><u>SECTION 2.</u></strong><em class="smText">&nbsp;<u>Office</u> </em></span> The registered office of HYSA is PO BOX 1050 Hammonton, New Jersey 08037 or </p>
+                </div>
+                <p class="text-center">
+                    <strong>
+                    <u>ARTICLE II</u><br>
+                    (Purposes)
+                    </strong>
+                </p>
+                <p>The purposes of HYSA are:</p>
+                <ol type="A">
+                    <li>
+                        To promote and advance generally the needs and welfare of youth, without regard to race, religion, color, age, sex or national origin, within the limits of Hammonton, New Jersey, to foster and encourage in the youth of the community a spirit of loyalty and faith in American traditions and institutions; to participate actively in constructive movement and endeavors for the promotion and safeguarding of the interests and general welfare of the youth of the community; to provide meeting places where the youth of community may enjoy educational, social benefits and athletic activities under competent supervision; to carry out the purpose of the corporation to do an and all other things lawful and proper in the promotion of the common interest of the youth of the community.
+                    </li>
+                    <li>
+                        To cooperate and become associated with and contribute to other nonprofit corporations or organizations which are tax-exempt under section 501©(3) of the Internal Revenue Code and its regulations as they now exist or hereafter amended, in an effort to avoid duplication of service provided by HYSA and generally carried on within Hammonton, New Jersey.
+                    </li>
+                </ol>
+
+                <p class="text-center">
+                    <strong>
+                    <u>ARTICLE III<br></u>
+                    (DEFINITIONS)
+                    </strong>
+                </p>
+                <ol type="A">
+                    <li>
+                        Executive Board shall be defined as set forth in Article 3 of the Constitution of the Hammonton Youth Soccer Association (hereinafter referred to as “HYSA”).
+                    </li>
+                    <li>
+                        Officers shall be defined as set forth in Article 3 of the Constitution fo the HYSA.
+                    </li>
+                    <li>
+                        Active Trustees shall be defined as those members of the HYSA who have been nominated by any member of the Executive Board to join the Executive Board and have received an affirmative vote by a majority of the Executive Board.
+                    </li>
+                    <li>
+                        General Membership shall be defined as the adult parent(s) or legal guardian(s) of all HYSA Youth Members, coaches and assistant coaches, or any other adult elected to the General membership by the Executive Board
+                    </li>
+                    <li>
+                        Youth Members shall be defined as any youth member of any team affiliated with the HYSA Travel Program or Recreational Program.
+                    </li>
+                    <li>
+                        HYSA Travel Program shall consist of all HYSA sponsored teams which compete at an advanced level against teams from other towns and/or soccer associations. 
+                    </li>
+                    <li>
+                        HYSA Recreational Program shall offer local youths the opportunity to compete on intramural teams consisting of players within defined Recreational Program Birth Years. 
+                    </li>
+                    <li>
+                        Recreational Program Birth Year will be defined as the Birth Date falling between October 1 through September 30 of the following year. School Grades will not be considered when establishing a Recreational Player’s Birth Year.
+                    </li>
+                    <li>
+                        HYSA Travel Program age groups shall be consistent with the age definitions set forth by the New Jersey Youth Soccer Association.
+                    </li>
+                    <li>
+                        Any section of these By-Laws may be amended in full or in part by a majority vote of the Executive Board II. 
+                    </li>
+                </ol>
+                <p class="text-center">
+                    <strong>
+                    <u>ARTICLE IV<br></u>
+                    (DUTIES OF OFFICERS)
+                    </strong>
+                </p>
+                <div class="apa-reference">
+                    <p><span><strong><u>SECTION 1.</u></strong><em class="smText">&nbsp;<u>President</u> </em></span> The President shall preside over all meetings of the voting members and the Board of Directors as a non-voting member and shall do and perform such other duties as shall pertain to such office and as may assigned to him by the Board of Directors or executive committee.</p>
+                </div>
+                <div class="apa-reference">
+                    <p><span><strong><u>SECTION 2.</u></strong><em class="smText">&nbsp;<u>Vice President</u> </em></span> There shall be one vice president who shall have such additional powers and duties granted to or imposed upon them as may be assigned to them by the president and Board of Directors. The vice president selected by the Board of Directors shall have and perform the powers and duties of the president in case of his absence or disability, or should the president fail or be unable to designate such vice president, the none of the Board of Directors chosen shall act as president. </p>
+                </div>
+                <div class="apa-reference">
+                    <p><span><strong><u>SECTION 3.</u></strong><em class="smText">&nbsp;<u>Secretary</u> </em></span> The secretary shall be appointed by the Board of Directors and shall keep the minutes of all meetings of the voting members, Board of Directors, and executive committee, and perform such other duties as shall pertain to such office as may be assigned to them by the Board of Directors or executive committee. </p>
+                </div>
+                <div class="apa-reference">
+                    <p><span><strong><u>SECTION 4.</u></strong><em class="smText">&nbsp;<u>Treasurer</u> </em></span> The treasurer shall be appointed by the Board of Directors and shall have the custody of all funds, property and securities of HYSA, subject to such regulations as may be imposed by the Board of Directors or Executive committee. All funds of HYSA shall be deposited in such banks or depositories as the Board of Directors or executive committee may from time to time designate, which funds shall be subject to withdrawal by check or draft upon the signatures of such persons as the Board of Directors or executive committee may from time to time designate.   The treasurer shall perform all other duties incidental to such office and such other duties as the Board of Directors or executive committee may assign to such officer from time to time. Two signatures will be needed to sign each check.</p>
+                </div>
+                <p class="text-center">
+                    <strong>
+                    <u>ARTICLE V<br></u>
+                    (DUTIES OF EXECUTIVE BOARD)
+                    </strong>
+                </p>
+                <ol type="A">
+                    <li>
+                        The Executive Board shall meet once during each calendar month at a place and time to be determined by the Executive Board. However, the Executive Board may at its discretion forgo meeting in the Month of December. Notice of the Time and Place of the meeting shall be provided through any accepted form of media or publication. 
+                    </li>
+                    <li>
+                        The Executive Board shall conduct an Annual Meeting of the General Membership every January. Notice of the Time and Place of the Meeting shall be provided to the General Members through any accepted form of media or publication. 
+                    </li>
+                    <li>
+                        The Executive Board shall be responsible for the management of the HYSA. It shall adopt rules and regulations and establish policies which are necessary for the efficient operation of the HYSA.
+                    </li>
+                    <li>
+                        The Executive Board shall have the ability to create Committees to assist in the efficient operation of the HYSA. The Committees may include members of the General Membership of the HYSA.
+                    </li>
+                    <li>
+                        Members of the Executive Board must attend two-thirds of the monthly meetings in a calendar year to remain an Active Trustee in Good Standing. If a Member of the Executive Board either fails to attend two-thirds of the Executive Board meetings or misses five (5) consecutive Executive Board Meetings regardless of calendar year, that member shall be removed from his/her position as an Executive Board Member. Exceptional circumstances may be considered by the Executive Board if reinstatement is sought by the removed member.
+                    </li>
+                </ol>
+                <p class="text-center">
+                    <strong>
+                    <u>ARTICLE VI<br></u>
+                    (ELECTION OF OFFICERS AND TERMS OF OFFICE) 
+                    </strong>
+                </p>
+                <ol type="A">
+                    <li>
+                        The Officers shall serve one year terms beginning on the First meeting of the Executive Board after elections are held. 
+                    </li>
+                    <li>
+                        The Executive Board shall appoint a three (3) member Special Committee on Elections each November to receive Nominations for each office. The members of the Special Committee on Elections shall consist of the Vice-President and at least one Active Trustee. Nominations must be received by December 15th, and present all nominations at the Meeting of the General Membership in January.
+                    </li>
+                    <li>
+                        Elections shall take place at the Annual Meeting of the General Membership held each January. 
+                    </li>
+                    <li>
+                        All General and Executive Board members present at the Annual Meeting shall be eligible to vote for each office. The Vote shall be taken by secret ballot if requested by any member present.
+                    </li>
+                </ol>
+                </p>
+                    <p class="text-center">
+                    <strong>
+                    <u>ARTICLE VII</u><br>
+                    (Disciplinary Policies)
+                    </strong>
+                </p>
+                
+                <p><span><strong><u>SECTION 1.</u></strong><em class="smText">&nbsp;<u>Yellow Cards</u> </em></span></p>
+                <ol type="A">
+                    <li>
+                        One (1) yellow card will lead to a review of the circumstances leading to the card by the Board of Directors.
+                    </li>
+                    <li>
+                        Two (2) yellow cards will lead to a review of the circumstances leading to the card by the Board of Directors. A letter will be issued by the Board stating the penalty for receiving three (3) yellow cards. This letter will be considered a written warning.
+                    </li>
+                    <li>
+                        Three (3) yellow cards will result in a two game suspension.
+                    </li>
+                    <li>
+                        Any additional yellow cards will result in a suspension.
+                    </li>
+                </ol>
+                <p><span><strong><u>SECTION 2.</u></strong><em class="smText">&nbsp;<u>Red Cards</u> </em></span></p>
+                <ol type="A">
+                    <li>
+                        One (1) red card will result in a two game suspension.
+                    </li>
+                    <li>
+                        Two (2) red cards will result in a minimum five game suspension. Two (2) red cards will be reviewed at the next regularly scheduled Board meeting. This review could result in a permanent suspension.
+                    </li>
+                    <li>
+                        Three (3) red cards will result in a permanent suspension.
+                    </li>
+                </ol>
+                
+                <p><span><strong><u>SECTION 3.</u></strong><em class="smText">&nbsp;<u>Physical Altercation</u> </em></span></p>
+                <ol type="A">
+                    <li>
+                        The first time that anyone is involved in a fight, it will lead to a five game suspension. All incidents of fighting will be reviewed by the grievance committee.
+                    </li>
+                    <li>
+                        The second time that anyone is involved in a fight will lead to a permanent suspension.  
+                    </li>
+                </ol>
+                <p><span><strong><u>SECTION 4.</u></strong><em class="smText">&nbsp;<u>Enforcement</u> </em></span></p>
+                <ol type="A">
+                    <li>
+                        These penalties will be enforced against anyone who is involved in HYSA and are cumulative.
+                    </li>
+                    <li>
+                        Anyone receiving a card must inform the Commissioner of his or her division. The Commissioner will in turn inform the county representative. Coaches must fill out a form that will be provided by HYSA and present the form to the Commissioner of the division whenever there is a card presented at their game.  
+                    </li>
+                </ol>
+                <p><span><strong><u>SECTION 5.</u></strong><em class="smText">&nbsp;<u>Appeals</u> </em></span></p>
+                <ol type="A">
+                    <li>
+                        Appeals of all penalties imposed by HYSA will be accepted by the Board of Directors within three (3) days of the infraction. The appeal should be a letter addressed to the grievance committee and presented to the Commissioner of your division.
+                    </li>
+                    <li>
+                        The grievance committee shall be made up of the four division commissioners and the director in charge of referees.  
+                    </li>
+                    <li>
+                        All appeals involving suspensions will be reviewed within three (3) days of receiving the appeal.
+                    </li>
+                </ol>
+                <p class="text-center">
+                    <strong>
+                    <u>ARTICLE VIII<br></u>
+                    (RECREATIONAL PROGRAM)
+                    </strong>
+                </p>
+                <ol type="A">
+                    <li>
+                        The HYSA Recreational Program shall be open to all youths within the local geographic area who meet one or more of the following criteria: 
+                        <ol>
+                            <li>
+                                have a Recreational Program Birth Year between the ages of Four (4) and Fifteen (15) during the Recreational Season.
+                            </li>
+                            <li>
+                                is not a member of any Travel Program Soccer Team at U15 or older.
+                            </li>
+                            <li>
+                                is not the member of any High School Soccer Team
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        The Recreational Program shall consist of teams within the following age definition.
+                        <ol>
+                            <li>
+                                Little Kickers U6: Players turning ages 5-6 during the Recreational Program Birth Year
+                            </li>
+                            <li>
+                                Pee Wee U8: Players turning ages 7-8 during the Recreational Program Birth Year
+                            </li>
+                            <li>
+                                Mini-Novice U10: Players turning ages 9-10 during the Recreational Program Birth Year 
+                            </li>
+                            <li>
+                                Novice U12: Players turning ages 11-12 during the Recreational Program Birth Year
+                            </li>
+                            <li>
+                                Senior U15: Players turning ages 13-15 during the Recreational Program Birth Year
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <p>VI. TRAVEL PROGRAM See Travel Regulations Adopted by Executive Board.</p>
+            </div>
+             <!-- End Body -->
+        </main>
+    </div>
+
+    <footer class="border-top footer mt-auto">
+        <div class="container">
+            &copy; 2022 - Hammonton Soccer - All Rights Reserved
+        </div>
+    </footer>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+</body>
+</html>

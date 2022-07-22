@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/68f00b8ed4.js" crossorigin="anonymous"></script>
+
+    <!-- Page Title -->
+    <title>Hammonton Soccer</title>
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="hsmvc.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/style.css" asp-append-version="true" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="announcements">
+            <p class="message">Fall Registration Begins 5/31</p>
+        </div>
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark navbarBg">
+        <div class="container-fluid mobileNav">
+                    <a a href="index.html" class="navbar-brand">
+                        <img src="images/hysa-logo.png" class="hysaLogo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto md-2 mb-lg-0">
+                            <div class="spacer-20"></div>
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">HOME</a>
+                            </li>
+                             <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">CLUB INFO</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a href="ourphilosophy.html" class="dropdown-item">OUR PHILOSOPHY</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="codeofconduct.html" class="dropdown-item">CODE OF CONDUCT</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="zerotolerancepolicy.html" class="dropdown-item">ZERO TOLERANCE POLICY</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="executiveboard.html" class="dropdown-item">EXECUTIVE BOARD</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="bylaws.html" class="dropdown-item">BY-LAWS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="volunteers.html" class="dropdown-item">VOLUNTEERS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">REC. PROGRAM</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U6">U6: Little Kickers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U7_8">U8: Pee Wee</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U9_10">U10: Mini-Novice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U11_13">U12: Novice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U11_13">U15: Senior</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="PracticeSchedules">PRACTICE SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="GameSchedules">GAME SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="Standings">STANDINGS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="RecreationalFAQ">RECREATIONAL FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">TRAVEL PROGRAM</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="RulesAndRegulations">Rules and Regulations</a>
+                                    </li>                                   
+                                   <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2006">BOYS 2006</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2008">BOYS 2008</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2009">BOYS 2009</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2010">BOYS 2010</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2011">BOYS 2011</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2012">BOYS 2012</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2013">BOYS 2013</a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Girls2010">GIRLS 2010</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Girls2011">GIRLS 2011</a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="PracticeSchedules">PRACTICE SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="GameSchedules">GAME SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="TryoutInformation">TRYOUT INFORMATION</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EDP TEAMS</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="EDPTeams" asp-action="ThreeLions">THREE LIONS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">COACHES</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="PracticeTips">PRACTICE TIPS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="EducationalResources">EDUCATIONAL RESOURCES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="Licensing">LICENSING</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="BoysTravelImportantDates">BOYS TRAVEL IMPORTANT DATES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="GirlsTravelImportantDates">GIRLS TRAVEL IMPORTANT DATES</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="fields.html" class="nav-link">FIELDS</a>
+                            </li>
+                        </ul>
+                        <div class="registerBtn">
+                            <a href="https://sports.bluesombrero.com/Default.aspx?tabid=595920" target="_blank">
+                                <button type="button" class="btn btn-primary">
+                                    <i class="fa-solid fa-user-plus"></i> FALL REGISTRATION
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+         <!-- <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">hsmvc</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <!-- body -->  
+            <div class="container">
+                <div class="spacer-20"></div>
+                <h1 class="text-center">Code of Conduct</h1>
+                <div>
+                    <p class="text-center fst-italic">
+                        All parents and other spectators, who plan to attend our Recreational Program soccer matches, should read the Parents' and Spectators' Code of Conduct.
+                    </p>
+                    <p class="text-center fw-bold">
+                        Parents' and Spectators' Code of Conduct
+                    </p>
+                    <p>
+                        The goal of the Hammonton Youth Soccer Association (HYSA) Recreational League is to provide a fun recreational soccer environment for children. We seek to develop soccer players… not only in terms of their soccer skills, but also in terms of their self-esteem and self-confidence. Players should learn to be competitive and try hard, and also learn to win and lose with good sportsmanship.
+                    </p>
+                    <p>
+                        Spectators are invited to attend games in order to help promote the goals of the Recreational League and the development of its players. In order to ensure that the League’s goals are met, we have established this Code of Conduct for all parents and spectators:
+                    </p>
+                    <p>
+                        Location of Spectators: At all games spectators are to stand back at least 3 feet from the sideline. This will give the players room to play the sidelines and make throw-ins, and also allow everyone to see. No one (spectators or coaches) may stand behind either goal line or along the sideline next to the penalty area. Spectators should remain on the opposite side of the field from the coaches and players, and should never enter the field of play unless asked.
+                    </p>
+                    <p>
+                        Spectators May Not Coach: Spectators may not provide direction or instructions to any player… this is the job of the coach and assistant coach. This includes providing direction to your own child. Positive cheering and encouragement is fine.
+                    </p>
+                    <p>
+                        Spectators Must Not Criticize: Spectators may not criticize any players or coaches, either on their team or the other team, or the referees. Only positive comments are permitted. If a parent has an issue with their child’s coach, the issue should be brought to the attention of an HYSA Board Member in a setting away from the field in a private manner. Similarly, if they have an issue with a referee, they can provide feedback to the coach after the game. Team coaches have methods to provide feedback to the League concerning referee issues.
+                    </p>
+                    <p>
+                        How Parents Can Help: Please help your coach by arriving on time with your child dressed in uniform, with shin guards and appropriate footwear. Make sure your child has a water bottle, especially on hot or humid days. Make sure your child removes any fashion accessories (earrings, barrettes, watches, etc.) which could injure your child or another player. Make sure your child attends practice where he/she will have a chance to learn. Please cheer for everyone.
+                    </p>
+                    <p>
+                        Redefine "Winning": Redefine what it means to be a “Winner” in your conversations with players and other fans. Winners are people who make maximum effort, continue to learn and improve, and do not let mistakes, or fear of making mistakes, stop them from playing and enjoying the game. Learning from mistakes is part of the game. Also, remember that all children are born with different abilities and develop at different rates. The true measure of how a child is doing is not in comparison to others but rather in comparison to his/her prior best. Don't judge the success of a game solely by whether your child’s team wins. Our goal in the Recreational League is to create balanced teams so that each team experiences both winning and losing.
+                    </p>
+                    <p>
+                        The Center Referee is in Charge: SPECTATORS MAY NOT DISAGREE WITH, QUESTION OR CRITICIZE THE REFEREE. THIS RULE APPLIES EVEN IF THE REFEREE MAKES A MISTAKE. Every year we lose many referees because they do not like the abusive treatment that they receive from spectators during the season. Referees do make mistakes and your coach has a method for providing feedback to the League after the game if the referee needs constructive criticism.. The coach or spectators may not object to a referee’s call or judgment on the field either before, during or after the game. The coach or spectators may not question a referee at any time. Due to the shortage of referees, sometimes an experienced HYSA Board Member will act as referee, and is entitled to the same respect.
+                    </p>
+                    <p>
+                        No alcoholic beverages of any kind are allowed at youth sporting events.
+                    </p>
+                    <p>
+                        Support the League's efforts to remove verbal and physical abuse from youth sporting activities.
+                    </p>
+                </div>
+            </div>
+             <!-- End Body -->
+        </main>
+    </div>
+
+    <footer class="border-top footer mt-auto">
+        <div class="container">
+            &copy; 2022 - Hammonton Soccer - All Rights Reserved
+        </div>
+    </footer>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+html {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0eef0;
+}
+
+.announcements {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    border-top: 5px solid #3779c7;
+    border-bottom: 5px solid #3779c7;
+    height: 80px;
+}
+
+.mobileNav {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 0 !important;
+    padding: 0 !important; 
+}
+
+.navbarBg{
+    background-image: url("/images/flameBg5.png");
+    position: left;
+    height: 70px;
+    line-height: 30px;
+    opacity: .2;
+    background-color: #000;
+    opacity: 1;
+}
+
+.hysaLogo {
+    height: 120px;
+    position: relative;
+    top: -40px;
+    left: 10px;
+    -webkit-filter: drop-shadow(1px 6px 3px #000);
+    filter: drop-shadow(1px 6px 3px #000);
+    z-index: 3;
+}
+
+.navbar-toggler {
+    position: relative;
+    top: -30px;
+    right: 20px;
+    border: 1px solid #fff !important;
+    z-index: 2;
+}
+
+#navbarSupportedContent {
+    position: relative;
+    top: -54px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: gray;
+    z-index: 2;
+}
+
+.nav-item {
+    padding: 0 10px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+a.dropdown-item {
+    color: #000;
+    font-weight: 400;
+}
+
+a.dropdown-item:hover {
+    color: #fff;
+    background-color: #3779c7;
+}
+.clearBoth {
+    clear: both;
+}
+
+.spacer-20 {
+    height: 20px;
+}
+
+.spacer-40 {
+    height: 40px;
+}
+
+.spacer-60 {
+    height: 60px;
+}
+
+.spacer-80 {
+    height: 80px;
+}
+
+.spacer-100 {
+    height: 100px;
+}
+
+
+footer {
+    margin: 0;
+    padding: 15px;
+    background-color: #27378f;
+    color: #fff !important;
+    line-height: 20px !important;
+}
+
+
+/********** Index Page  **********/
+
+/* Slide Show */
+
+#carouselExampleCaptions {
+    z-index: 1;
+}
+
+.carousel-caption {
+    /* background-color: rgba(39, 55, 143, .5); */
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 1.1em;
+    height: 110px;
+}
+
+.carousel-caption > h2 {
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 1px #000;
+}
+
+/* News Event Field Status Section */
+.nav-tabs {
+    background-color: #27378f;
+    height: 40px !important;
+    line-height: 20px !important;
+}
+
+.nav-link {
+    height: 40px !important;
+    line-height: 20px !important;
+    color: #f0eef0;
+}
+
+.nav-tabs .nav-link {
+    color: #f0eef0 !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    
+}
+
+.nav-tabs .nav-link:hover {
+    
+}
+
+.nav-tabs .nav-link.active {
+
+    margin: 0;
+    color: #fff !important;
+    background-color: #3779c7;
+    border: 1px solid #3779c7;
+}
+
+.infoTabs {
+    border-bottom: none;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #3779c7;
+}
+
+#myTabContent {
+    margin: 0;
+    padding: 2.5px;
+    background-color: #3779c7;
+}
+
+.newsGroup {
+    margin: 0;
+    padding: 2.5px;
+    width: 100%;
+}
+
+.newsItem {
+    margin: 0;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.newsIcon {
+    height:70px;
+}
+
+.newsImage {
+    float: left;
+}
+
+.newsContent {
+    padding-top: 5px;
+}
+
+#fieldStatus {
+    margin: 0;
+    padding: 5px;
+    background-color: #3779c7;
+    color: #fff;
+    text-align: center;
+}
+
+.fieldStatusHeader {
+    padding: 5px 0 12px 0;
+}
+
+.fields {
+    margin: 0;
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+}
+
+.field {
+    float: left;
+    font-size: 1.2em;
+}
+
+.status {
+    float: right;
+    padding-right: 50px;
+    font-size: 1.2em;
+}
+
+.open {
+    color: rgb(32, 116, 29);
+}
+
+.closed {
+    color: rgb(170, 15, 15);
+}
+
+.registerBtn {
+    margin: 10px;
+}
+
+
+.registerBtn > a > Button:hover {
+    background-color: #4c90e2;
+}
+
+.merchBtn {
+    margin: 10px;
+}
+
+
+
+/* Executive Board Page */
+.card-header {
+    background-color: #27378f;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+/* End Executive Board Page */
+
+
+
+/* Media Queries */
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .message {
+        visibility: visible;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .hysaLogo {
+        position: relative;
+        top: -40px;;
+        left: 10px;
+    }
+
+ }
+
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .nav-item {
+        border-bottom: none;
+    }
+
+    #navbarSupportedContent {
+        position: relative;
+        top: 0px;
+        background: none;
+    }
+
+    a.nav-link {
+        height: 70px !important;
+        line-height: 55px !important;
+    }
+    .nav-link {
+        color: rgb(182, 179, 179) !important;
+        height: 70px;
+        line-height: 55px;
+        width: 160px;
+        text-align: center;
+    }
+
+    .nav-link:hover {
+        color: #fff !important;
+        background-color: rgba(255,255,255,.3);
+        height: 70px;
+        line-height: 55px;
+    
+    }
+
+    .hysaLogo {
+        position: relative;
+        top: 0;
+        left: 10px;
+    }
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+}

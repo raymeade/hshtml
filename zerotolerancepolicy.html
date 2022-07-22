@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/68f00b8ed4.js" crossorigin="anonymous"></script>
+
+    <!-- Page Title -->
+    <title>Hammonton Soccer</title>
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="hsmvc.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/style.css" asp-append-version="true" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="announcements">
+            <p class="message">Fall Registration Begins 5/31</p>
+        </div>
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark navbarBg">
+        <div class="container-fluid mobileNav">
+                    <a a href="index.html" class="navbar-brand">
+                        <img src="images/hysa-logo.png" class="hysaLogo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto md-2 mb-lg-0">
+                            <div class="spacer-20"></div>
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">HOME</a>
+                            </li>
+                             <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">CLUB INFO</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a href="ourphilosophy.html" class="dropdown-item">OUR PHILOSOPHY</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="codeofconduct.html" class="dropdown-item">CODE OF CONDUCT</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="zerotolerancepolicy.html" class="dropdown-item">ZERO TOLERANCE POLICY</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="executiveboard.html" class="dropdown-item">EXECUTIVE BOARD</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="bylaws.html" class="dropdown-item">BY-LAWS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="volunteers.html" class="dropdown-item">VOLUNTEERS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">REC. PROGRAM</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U6">U6: Little Kickers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U7_8">U8: Pee Wee</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U9_10">U10: Mini-Novice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U11_13">U12: Novice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U11_13">U15: Senior</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="PracticeSchedules">PRACTICE SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="GameSchedules">GAME SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="Standings">STANDINGS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="RecreationalFAQ">RECREATIONAL FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">TRAVEL PROGRAM</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="RulesAndRegulations">Rules and Regulations</a>
+                                    </li>                                   
+                                   <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2006">BOYS 2006</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2008">BOYS 2008</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2009">BOYS 2009</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2010">BOYS 2010</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2011">BOYS 2011</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2012">BOYS 2012</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2013">BOYS 2013</a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Girls2010">GIRLS 2010</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Girls2011">GIRLS 2011</a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="PracticeSchedules">PRACTICE SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="GameSchedules">GAME SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="TryoutInformation">TRYOUT INFORMATION</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EDP TEAMS</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="EDPTeams" asp-action="ThreeLions">THREE LIONS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">COACHES</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="PracticeTips">PRACTICE TIPS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="EducationalResources">EDUCATIONAL RESOURCES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="Licensing">LICENSING</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="BoysTravelImportantDates">BOYS TRAVEL IMPORTANT DATES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="GirlsTravelImportantDates">GIRLS TRAVEL IMPORTANT DATES</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="fields.html" class="nav-link">FIELDS</a>
+                            </li>
+                        </ul>
+                        <div class="registerBtn">
+                            <a href="https://sports.bluesombrero.com/Default.aspx?tabid=595920" target="_blank">
+                                <button type="button" class="btn btn-primary">
+                                    <i class="fa-solid fa-user-plus"></i> FALL REGISTRATION
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+         <!-- <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">hsmvc</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <!-- body -->  
+            <div class="container">
+                <div class="spacer-20"></div>
+                <h1 class="text-center">Zero Tolerance Policy</h1>
+                <p>
+                    A letter to who plan to attend HYSA game:
+                </p>
+                <p>
+                    This is recreation league youth soccer and we are trying to teach life skills such as sportsmanship and appropriate behavior along with soccer skills. Please explain acceptable behavior to any spectators (friends, grandparents, and etc.) that come to support a player or the teams: keep your enthusiasm positive. Things can be said in the heat of the moment that you later regret, please think before you speak.
+                </p>
+                <p>
+                    Please review the league’s zero tolerance policy. This policy was distributed to all parents/guardians of players at the start of the season. Note that per the policy, the league will not tolerate a spectator that uses any type of threatening or derogatory language towards any player, coach, referee, or other spectators. Assessment of penalties is at the discretion of the referee or league official.
+                </p>
+                <p>
+                    To help prevent physical assault and verbal abuse in the leagues and clubs within the Hammonton Youth Soccer Association (HYSA); HYSA has adopted a ZERO TOLERANCE POLICY. This policy applies to all coaches, players, parents, spectators and other supporters and referees effective immediately. Abusive and obscene language, violent play/conduct, fighting and other behavior (including, but not limited to sarcasm, taunting, etc.) deemed detrimental to the game between the above mentioned groups will not be tolerated. The ultimate responsibility for the actions of coaches, players and spectators resides with the member clubs.
+                </p>
+                <p>
+                    It is the responsibility of ALL coaches/players/parents to maintain the highest standards of conduct for themselves, their players and supporters in all matches. Abusive, confrontational and obscene language, violent play/conduct, fighting, inciting, escalating and other behavior detrimental to individuals, the game and the sport will not be tolerated. A coach’s/player’s/parent’s responsibility for referee support and spectator control includes the times prior to, during and after the game at the field and surrounding areas.
+                </p>
+                <p>
+                    All persons responsible for a team and all of the spectators shall support the referee at all times. Failure to do so will undermine the referee’s authority and has the very real potential of creating a hostile environment for the players, the referee and all of the other participants and spectators. Escalation to violence can easily result.
+                </p>
+                <p>
+                    ​Therefore:<br>
+                    No one is to address the referee or make comments on or about a referee's call or non-call while present at any Hammonton Youth Soccer Association game.
+                    <br>
+                    <br>
+                    Exceptions for Coaching Staff or player During Match:
+                    <ol>
+                        <li>Responding to a referee initiating communication.</li>
+                        <li>Making Substitutions.</li>
+                        <li>Pointing out emergencies or safety issues. All conversations are to be in a polite, respectful tone of voice. No sarcasm. No intimidation.</li>
+                    </ol>
+                    Exceptions for Coaching Staff or player at Half Time or end of game:
+                    <ol>
+                        <li>Ask for an explanation of a call or a rule.</li>
+                        <li>Polite friendly feedback. All conversations are to be in a polite, respectful tone of voice. No sarcasm. No intimidation.</li>
+                    </ol>
+                </p>
+                <p>
+                    Penalties:
+                </p>
+                <p>
+                    Initial Minor Infraction – Verbal Warning
+                </p>
+                <p>
+                    Subsequent Minor Infractions – Warning (caution) or Dismissal (ejection) depending on seriousness.
+                </p>
+                <p>
+                    Initial Major Infraction – Warning (caution) or Dismissal (ejection) depending on seriousness.
+                </p>
+                <p>
+                    Exceptions for fans, spectators, others:
+                    <ol>
+                        <li>Responding to a referee initiating communication.</li>
+                        <li>Pointing out emergencies or safety issues (Polite, respectful tone of voice. No sarcasm. No intimidation).</li>
+                    </ol>
+                </p>
+                <p>
+                    Penalties:
+                </p>
+                <p>
+                    1st Infraction – The referee at the next stoppage of play, will ask the coach to quiet the offender.
+                </p>
+                <p>
+                    2nd Infraction – Verbal Warning. Referee, at next stoppage of play, will ask the coach to warn offender that the next infraction will result in either removal of the offender or the referee will abandon the match.
+                </p>
+                <p>
+                    3rd Infraction – The referee at the next stoppage of play, shall instruct the coach to direct the offender to leave the field. The referee will abandon the game if the offender does not leave the field immediately.
+                </p>
+                <p>
+                    Players: A penalty for unsportsmanlike conduct (Zero Tolerance) shall be assessed whenever a player:
+                    <ul>
+                        <li>Openly disputes or argues about any decision by an Official.</li>
+                        <li>Uses obscene or vulgar language, including swearing, in a boisterous manner to anyone at any time, even if it is not directed at any particular person.</li>
+                        <li>Visually demonstrates any sign of dissatisfaction with any Official’s decision, in a manner that openly embarrasses the Official and/or challenges his judgment.</li>
+                        <li>Uses any type of threatening or derogatory language towards any player, coach, referee, or other spectators. This is at the sole discretion of the referee. </li>
+                    </ul>
+                </p>
+                <p>
+                    Any time that any player persists in any of these actions, he/she shall be assessed a Misconduct Penalty. The HYSA Board of Directors will evaluate the issue to determine what penalty is appropriate and convey their findings and decisions in writing to the player and their parent/guardian. Players have the right to appeal any decision to the HYSA Board of Directors. Appeals have to be submitted to the Board in writing within 48 hours of being notified of the penalty. An appeal is not available if facts are submitted by the referee in the match report-a referee match report is the official report of the game.
+                </p>
+                <p>
+                    ​Coaches: A penalty for unsportsmanlike conduct (Zero Tolerance) shall be assessed whenever a coach:
+                    <ul>
+                        <li>Openly disputes or argues about any decision by an Official.</li>
+                        <li>Uses obscene or vulgar language in any manner to anyone at any time.</li>
+                        <li>Visually displays any sign of dissatisfaction with an Official’s decision, in a manner that openly embarrasses the Official and/or challenges his judgment.</li>
+                        <li>Uses any type of threatening or derogatory language towards any player, coach, referee, or other spectators. This is at the discretion of the referee.</li>
+                        <li>
+                            Does not support and enforce the Zero Tolerance policy, with regards to their players, parent/guardians, or any spectator associated with their team within their control without putting themselves in harms way. Any player/parent/guardian/spectator associated with their team that displays unacceptable behavior will be reported to corresponding Travel or Intramural Director immediately. Failure to do so would result in a penalty.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    Any time that a Coach persists in any of these actions, he/she shall be assessed a Game Misconduct Penalty. The HYSA Board of Directors will evaluate the issue to determine what penalty is appropriate and convey their findings and decisions in writing to the coach/coaches. Coaches have the right to appeal any decision to the HYSA Board of Directors. Appeals have to be submitted to the Board in writing within 48 hours of being notified of the penalty. An appeal is not available if facts are submitted by the referee in the match report-a referee match report is the official report of the game.
+                </p>
+                <p>
+                    Parents/Guardian/Spectator: A penalty for unsportsmanlike conduct (Zero Tolerance) shall be assessed whenever a parent/guardian/spectator
+                    <ul>
+                        <li>Openly disputes or argues about any decision by an Official.</li>
+                        <li>Uses obscene or vulgar language in any manner to anyone at any time.</li>
+                        <li>Visually displays any sign of dissatisfaction with an Official’s decision, in a manner that openly embarrasses the Official and/or challenges his judgment.</li>
+                        <li>Uses any type of threatening or derogatory language towards any player, coach, referee, or other spectators. This is at the discretion of the referee or field marshall.</li>
+                    </ul>
+                </p>
+                <p>
+                    Any time that any parent/guardian/spectator persists in any of these actions, he/she shall be assessed a Misconduct Penalty. The HYSA Board of Directors will evaluate the issue to determine what penalty is appropriate and convey their findings and decisions in writing to the parent/guardian/spectator. Parents/guardians/spectators have the right to appeal any decision to the HYSA Board of Directors. Appeals have to be submitted to the Board in writing within 48 hours of being notified of the penalty. An appeal is not available if facts are submitted by the referee in the match report-a referee match report is the official report of the game.
+                </p>
+                <p>
+                    The Hammonton Youth Soccer Association may impose additional sanctions upon the offending individual(s) including:
+                    <ol>
+                        <li>Suspension or dismissal of coach or player from team position</li>
+                        <li>Banishment of the offender from participation and or attendance at events</li>
+                        <li>Banishment of offenders’ family from participation in or attendance at events.</li>
+                    </ol>
+                </p>  
+            </div>
+             <!-- End Body -->
+        </main>
+    </div>
+
+    <footer class="border-top footer mt-auto">
+        <div class="container">
+            &copy; 2022 - Hammonton Soccer - All Rights Reserved
+        </div>
+    </footer>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+</body>
+</html>

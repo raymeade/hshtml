@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/68f00b8ed4.js" crossorigin="anonymous"></script>
+
+    <!-- Page Title -->
+    <title>Hammonton Soccer</title>
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="hsmvc.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/style.css" asp-append-version="true" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="announcements">
+            <p class="message">Fall Registration Begins 5/31</p>
+        </div>
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark navbarBg">
+        <div class="container-fluid mobileNav">
+                    <a a href="index.html" class="navbar-brand">
+                        <img src="images/hysa-logo.png" class="hysaLogo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto md-2 mb-lg-0">
+                            <div class="spacer-20"></div>
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">HOME</a>
+                            </li>
+                             <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">CLUB INFO</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a href="ourphilosophy.html" class="dropdown-item">OUR PHILOSOPHY</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="codeofconduct.html" class="dropdown-item">CODE OF CONDUCT</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="zerotolerancepolicy.html" class="dropdown-item">ZERO TOLERANCE POLICY</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="executiveboard.html" class="dropdown-item">EXECUTIVE BOARD</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="bylaws.html" class="dropdown-item">BY-LAWS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="volunteers.html" class="dropdown-item">VOLUNTEERS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">REC. PROGRAM</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U6">U6: Little Kickers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U7_8">U8: Pee Wee</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U9_10">U10: Mini-Novice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U11_13">U12: Novice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U11_13">U15: Senior</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="PracticeSchedules">PRACTICE SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="GameSchedules">GAME SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="Standings">STANDINGS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="RecreationalFAQ">RECREATIONAL FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">TRAVEL PROGRAM</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="RulesAndRegulations">Rules and Regulations</a>
+                                    </li>                                   
+                                   <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2006">BOYS 2006</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2008">BOYS 2008</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2009">BOYS 2009</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2010">BOYS 2010</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2011">BOYS 2011</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2012">BOYS 2012</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2013">BOYS 2013</a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Girls2010">GIRLS 2010</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Girls2011">GIRLS 2011</a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="PracticeSchedules">PRACTICE SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="GameSchedules">GAME SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="TryoutInformation">TRYOUT INFORMATION</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EDP TEAMS</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="EDPTeams" asp-action="ThreeLions">THREE LIONS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">COACHES</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="PracticeTips">PRACTICE TIPS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="EducationalResources">EDUCATIONAL RESOURCES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="Licensing">LICENSING</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="BoysTravelImportantDates">BOYS TRAVEL IMPORTANT DATES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="GirlsTravelImportantDates">GIRLS TRAVEL IMPORTANT DATES</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="fields.html" class="nav-link">FIELDS</a>
+                            </li>
+                        </ul>
+                        <div class="registerBtn">
+                            <a href="https://sports.bluesombrero.com/Default.aspx?tabid=595920" target="_blank">
+                                <button type="button" class="btn btn-primary">
+                                    <i class="fa-solid fa-user-plus"></i> FALL REGISTRATION
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+         <!-- <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">hsmvc</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <!-- body -->  
+            <div class="container">
+                <div class="spacer-20"></div>
+                <h1 class="text-center">Volunteers</h1>
+                <p>
+                    As many of you may know by now, HYSA is a 100% volunteer organization with no monetary support from the township. There are no paid board members or coaches, and we are a private 501C3 organization. We rely solely on individuals like you to coach and help run the organization. There are various duties at the complex that are performed by our board and volunteers to help keep things running smooth. For instance, did you know that we maintain our own fields? What this means is all the field lining, net setup, weeding, and trash cleanup is done by the board of directors with the help of a few volunteers. The problem is there are more tasks that we do that do not involve running the club directly than items that do. This is where volunteer crews and committees can help. Did you know that during a soccer season that a director will spend anywhere from 10 – 15 hours a week at the complex doing work? This is on top of whatever their other tasks are for the club. For instance, our Travel Director must attend 3 meetings a month for the various leagues that we participate in as well as our HYSA board meeting. The director does this because that is what his role is in the club administration. However, in addition to spending large amounts of time helping the travel teams, he is also responsible to help maintain the club. While no director does not want to help maintain, as you can see it makes it hard to keep up with your other responsibilities for the club.
+                </p>
+                <p>
+                    So why am I saying all this? It is simple. We <span class="fw-bold">NEED</span> your help. We need people who are willing to put an hour in here and an hour in there. No one is asking for the commitment that your board is already doing, but rather the quick help that may enable that board member to complete some other tasks or even just get to spend time with his family. 
+                </p>
+                <p>
+                    We as a board do this because we love soccer and want to see HYSA grow and continue to provide an excellent place for all kids to play soccer. With your help we will be able to continue to do this. Please take some time and help where you can. Thank you for being a volunteer.
+                </p>          
+            </div>
+             <!-- End Body -->
+        </main>
+    </div>
+
+    <footer class="border-top footer mt-auto">
+        <div class="container">
+            &copy; 2022 - Hammonton Soccer - All Rights Reserved
+        </div>
+    </footer>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+</body>
+</html>
