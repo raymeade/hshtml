@@ -278,6 +278,33 @@ footer {
 }
 /* End Executive Board Page */
 
+/* Schedule Page */
+.table {
+    background-color: #fff;
+}
+
+.scheduleLogo {
+    height: 100px;
+    display: none;
+}
+
+.table-bgColor {
+    background-color: #27378f !important;
+    color: #fff;
+}
+
+.colDate {
+    width: 20%;
+}
+
+.colTeam {
+    width: 40%;
+}
+
+.colDate, .colTeam {
+    font-weight: 400;
+}
+/* End Schedule Page */
 
 
 /* Media Queries */
