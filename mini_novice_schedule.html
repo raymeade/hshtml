@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/68f00b8ed4.js" crossorigin="anonymous"></script>
+
+    <!-- Page Title -->
+    <title>Hammonton Soccer</title>
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="hsmvc.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/style.css" asp-append-version="true" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="announcements">
+            <p class="message">Fall Registration Begins 5/31</p>
+        </div>
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark navbarBg">
+        <div class="container-fluid mobileNav">
+                    <a a href="index.html" class="navbar-brand">
+                        <img src="images/hysa-logo.png" class="hysaLogo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto md-2 mb-lg-0">
+                            <div class="spacer-20"></div>
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">HOME</a>
+                            </li>
+                             <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">CLUB INFO</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a href="ourphilosophy.html" class="dropdown-item">OUR PHILOSOPHY</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="codeofconduct.html" class="dropdown-item">CODE OF CONDUCT</a>
+                                    </li>
+                                     <li class="nav-item">
+                                        <a href="zerotolerancepolicy.html" class="dropdown-item">ZERO TOLERANCE POLICY</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="executiveboard.html" class="dropdown-item">EXECUTIVE BOARD</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="bylaws.html" class="dropdown-item">BY-LAWS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="volunteers.html" class="dropdown-item">VOLUNTEERS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">REC. PROGRAM</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U6">U6: Little Kickers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U7_8">U8: Pee Wee</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U9_10">U10: Mini-Novice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U11_13">U12: Novice</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="U11_13">U15: Senior</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="PracticeSchedules">PRACTICE SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="GameSchedules">GAME SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="Standings">STANDINGS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="RecProgram" asp-action="RecreationalFAQ">RECREATIONAL FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">TRAVEL PROGRAM</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="RulesAndRegulations">Rules and Regulations</a>
+                                    </li>                                   
+                                   <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2006">BOYS 2006</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2008">BOYS 2008</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2009">BOYS 2009</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2010">BOYS 2010</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2011">BOYS 2011</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2012">BOYS 2012</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Boys2013">BOYS 2013</a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Girls2010">GIRLS 2010</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="Girls2011">GIRLS 2011</a>
+                                    </li>
+                                    <hr>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="PracticeSchedules">PRACTICE SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="GameSchedules">GAME SCHEDULES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="TravelProgram" asp-action="TryoutInformation">TRYOUT INFORMATION</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EDP TEAMS</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="EDPTeams" asp-action="ThreeLions">THREE LIONS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">COACHES</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="PracticeTips">PRACTICE TIPS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="EducationalResources">EDUCATIONAL RESOURCES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="Licensing">LICENSING</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="BoysTravelImportantDates">BOYS TRAVEL IMPORTANT DATES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Coaches" asp-action="GirlsTravelImportantDates">GIRLS TRAVEL IMPORTANT DATES</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="fields.html" class="nav-link">FIELDS</a>
+                            </li>
+                        </ul>
+                        <div class="registerBtn">
+                            <a href="https://sports.bluesombrero.com/Default.aspx?tabid=595920" target="_blank">
+                                <button type="button" class="btn btn-primary">
+                                    <i class="fa-solid fa-user-plus"></i> FALL REGISTRATION
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+         <!-- <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">hsmvc</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <!-- body -->  
+            <div class="container scheduleText">
+                <div class="spacer-20"></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="images/hysa-logo.png" class="scheduleLogo">
+                    </div>
+                    <div class="col-sm-12 text-begin">
+                        <h1 class="">Hammonton Soccer Mini Novice</h1>
+                        <h2>Fall 2022</h2>
+                    </div>              
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <!-- Week 1 -->
+                        <table class="table table-sm table-bordered border-dark table-striped">
+                            <thead class="table-bgColor table-bordered border-dark text-center">
+                            <tr>
+                                <th scope="col" class="colDate">9/10/22</th>
+                                <th scope="col" class="colTeam">WEEK 1</th>
+                                <th scope="col" class="colTeam"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">8:00 AM - Field 3</th>
+                                    <td>SJ FAMILY MEDICAL CENTER</td>
+                                    <td>SHOWCASE SPORTS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9:00 AM - Field 3</th>
+                                    <td>SCA EMPLOYMENT AGENCY</td>
+                                    <td>BROTHER'S PIZZA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:00 AM - Field 3</th>
+                                    <td>BAGLIANI'S MARKET</td>
+                                    <td>DIMEGLIO SEPTIC</td>
+                                </tr>
+                                <tr class="table-warning table-bordered border-dark">
+                                    <th scope="row">10:30 AM - Field 3B</th>
+                                    <td>HOMESTEAD BARBERSHOP</td>
+                                    <td>EMERY DEMOLITION</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:00 AM - Field 3</th>
+                                    <td>BASSETTI PHOTOS</td>
+                                    <td>AQUEDUCT PLUMBING</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-20"></div>
+                        <!-- Week 2 -->
+                        <table class="table table-sm table-bordered border-dark table-striped">
+                            <thead class="table-bgColor table-bordered border-dark text-center">
+                            <tr>
+                                <th scope="col" class="colDate">9/17/22</th>
+                                <th scope="col" class="colTeam">WEEK 2</th>
+                                <th scope="col" class="colTeam"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">8:00 AM - Field 3</th>
+                                    <td>EMERY DEMOLITION</td>
+                                    <td>AQUEDUCT PLUMBING</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9:00 AM - Field 3</th>
+                                    <td>BASSETTI PHOTOS</td>
+                                    <td>BROTHER'S PIZZA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:00 AM - Field 3</th>
+                                    <td>BAGLIANI'S MARKET</td>
+                                    <td>SHOWCASE SPORTS</td>
+                                </tr>
+                                <tr class="table-warning table-bordered border-dark">
+                                    <th scope="row">10:30 AM - Field 3B</th>
+                                    <td>DIMEGLIO SEPTIC</td>
+                                    <td>HOMESTEAD BARBERSHOP</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:00 AM - Field 3</th>
+                                    <td>SJ FAMILY MEDICAL CENTER</td>
+                                    <td>SCA EMPLOYMENT AGENCY</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-20"></div>
+                        <!-- Week 3 -->
+                        <table class="table table-sm table-bordered border-dark table-striped">
+                            <thead class="table-bgColor table-bordered border-dark text-center">
+                            <tr>
+                                <th scope="col" class="colDate">9/24/22</th>
+                                <th scope="col" class="colTeam">WEEK 3</th>
+                                <th scope="col" class="colTeam"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">8:00 AM - Field 3</th>
+                                    <td>HOMESTEAD BARBERSHOP</td>
+                                    <td>BAGLIANI'S MARKET</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9:00 AM - Field 3</th>
+                                    <td>EMERY DEMOLITION</td>
+                                    <td>BROTHER'S PIZZA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:00 AM - Field 3</th>
+                                    <td>SCA EMPLOYMENT AGENCY</td>
+                                    <td>SHOWCASE SPORTS</td>
+                                </tr>
+                                <tr class="table-warning table-bordered border-dark">
+                                    <th scope="row">10:30 AM - Field 3B</th>
+                                    <td>SJ FAMILY MEDICAL CENTER</td>
+                                    <td>BASSETTI PHOTOS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:00 AM - Field 3</th>
+                                    <td>DIMEGLIO SEPTIC</td>
+                                    <td>AQUEDUCT PLUMBING</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-20"></div>
+                        <!-- Week 4 -->
+                        <table class="table table-sm table-bordered border-dark table-striped">
+                            <thead class="table-bgColor table-bordered border-dark text-center">
+                            <tr>
+                                <th scope="col" class="colDate">10/1/22</th>
+                                <th scope="col" class="colTeam">WEEK 4</th>
+                                <th scope="col" class="colTeam"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">8:00 AM - Field 3</th>
+                                    <td>BAGLIANI'S MARKET</td>
+                                    <td>AQUEDUCT PLUMBING</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9:00 AM - Field 3</th>
+                                    <td>DIMEGLIO SEPTIC</td>
+                                    <td>BROTHER'S PIZZA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:00 AM - Field 3</th>
+                                    <td>SHOWCASE SPORTS</td>
+                                    <td>HOMESTEAD BARBERSHOP</td>
+                                </tr>
+                                <tr class="table-warning table-bordered border-dark">
+                                    <th scope="row">10:30 AM - Field 3B</th>
+                                    <td>EMERY DEMOLITION</td>
+                                    <td>SJ FAMILY MEDICAL CENTER</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:00 AM - Field 3</th>
+                                    <td>SCA EMPLOYMENT AGENCY</td>
+                                    <td>BASSETTI PHOTOS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-20"></div>
+                        <!-- Week Bye Week -->
+                        <table class="table table-sm table-bordered border-dark table-striped">
+                            <thead class="table-bgColor table-bordered border-dark text-center">
+                            <tr>
+                                <th scope="col" class="colDate">10/8/22</th>
+                                <th scope="col"></th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td class="text-center">COLUMBUS DAY WEEKEND</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td class="text-center">NO GAMES SCHEDULED</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-20"></div>
+                        
+                        
+                            <!-- Week 5 -->
+                        <table class="table table-sm table-bordered border-dark table-striped">
+                            <thead class="table-bgColor table-bordered border-dark text-center">
+                            <tr>
+                                <th scope="col" class="colDate">10/15/22</th>
+                                <th scope="col" class="colTeam">WEEK 5</th>
+                                <th scope="col" class="colTeam"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">8:00 AM - Field 3</th>
+                                    <td>HOMESTEAD BARBERSHOP</td>
+                                    <td>AQUEDUCT PLUMBING</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9:00 AM - Field 3</th>
+                                    <td>BAGLIANI'S MARKET</td>
+                                    <td>BROTHER'S PIZZA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:00 AM - Field 3</th>
+                                    <td>SHOWCASE SPORTS</td>
+                                    <td>BASSETTI PHOTOS</td>
+                                </tr>
+                                <tr class="table-warning table-bordered border-dark">
+                                    <th scope="row">10:30 AM - Field 3B</th>
+                                    <td>SJ FAMILY MEDICAL CENTER</td>
+                                    <td>DIMEGLIO SEPTIC</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:00 AM - Field 3</th>
+                                    <td>SCA EMPLOYMENT AGENCY</td>
+                                    <td>EMERY DEMOLITION</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-20"></div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <!-- Week 6 -->
+                        <table class="table table-sm table-bordered border-dark table-striped">
+                            <thead class="table-bgColor table-bordered border-dark text-center">
+                            <tr>
+                                <th scope="col" class="colDate">10/22/22</th>
+                                <th scope="col" class="colTeam">WEEK 6</th>
+                                <th scope="col" class="colTeam"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">8:00 AM - Field 3</th>
+                                    <td>DIMEGLIO SEPTIC</td>
+                                    <td>SCA EMPLOYMENT AGENCY</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9:00 AM - Field 3</th>
+                                    <td>SJ FAMILY MEDICAL CENTER</td>
+                                    <td>BAGLIANI'S MARKET</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:00 AM - Field 3</th>
+                                    <td>SHOWCASE SPORTS</td>
+                                    <td>AQUEDUCT PLUMBING</td>
+                                </tr>
+                                <tr class="table-warning table-bordered border-dark">
+                                    <th scope="row">10:30 AM - Field 3B</th>
+                                    <td>EMERY DEMOLITION</td>
+                                    <td>BASSETTI PHOTOS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:00 AM - Field 3</th>
+                                    <td>HOMESTEAD BARBERSHOP</td>
+                                    <td>BROTHER'S PIZZA</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-20"></div>
+                      
+                        <!-- Week 7 -->
+                        <table class="table table-sm table-bordered border-dark table-striped">
+                            <thead class="table-bgColor table-bordered border-dark text-center">
+                            <tr>
+                                <th scope="col" class="colDate">10/29/22</th>
+                                <th scope="col" class="colTeam">WEEK 7</th>
+                                <th scope="col" class="colTeam"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">8:00 AM - Field 3</th>
+                                    <td>SJ FAMILY MEDICAL CENTER</td>
+                                    <td>HOMESTEAD BARBERSHOP</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9:00 AM - Field 3</th>
+                                    <td>DIMEGLIO SEPTIC</td>
+                                    <td>BASSETTI PHOTOS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:00 AM - Field 3</th>
+                                    <td>SCA EMPLOYMENT AGENCY</td>
+                                    <td>BAGLIANI'S MARKET</td>
+                                </tr>
+                                <tr class="table-warning table-bordered border-dark">
+                                    <th scope="row">10:30 AM - Field 3B</th>
+                                    <td>AQUEDUCT PLUMBING</td>
+                                    <td>BROTHER'S PIZZA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:00 AM - Field 3</th>
+                                    <td>SHOWCASE SPORTS</td>
+                                    <td>EMERY DEMOLITION</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-20"></div>
+                        <!-- Week 8 -->
+                        <table class="table table-sm table-bordered border-dark table-striped">
+                            <thead class="table-bgColor table-bordered border-dark text-center">
+                            <tr>
+                                <th scope="col" class="colDate">11/5/22</th>
+                                <th scope="col" class="colTeam">WEEK 8</th>
+                                <th scope="col" class="colTeam"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">8:00 AM - Field 3</th>
+                                    <td>SHOWCASE SPORTS</td>
+                                    <td>BROTHER'S PIZZA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9:00 AM - Field 3</th>
+                                    <td>SCA EMPLOYMENT AGENCY</td>
+                                    <td>HOMESTEAD BARBERSHOP</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:00 AM - Field 3</th>
+                                    <td>DIMEGLIO SEPTIC</td>
+                                    <td>EMERY DEMOLITION</td>
+                                </tr>
+                                <tr class="table-warning table-bordered border-dark">
+                                    <th scope="row">10:30 AM - Field 3B</th>
+                                    <td>SJ FAMILY MEDICAL CENTER</td>
+                                    <td>AQUEDUCT PLUMBING</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:00 AM - Field 3</th>
+                                    <td>BAGLIANI'S MARKET</td>
+                                    <td>BASSETTI PHOTOS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-20"></div>
+                      
+                        <!-- Week 9 -->
+                        <table class="table table-sm table-bordered border-dark table-striped">
+                            <thead class="table-bgColor table-bordered border-dark text-center">
+                            <tr>
+                                <th scope="col" class="colDate">11/12/22</th>
+                                <th scope="col" class="colTeam">WEEK 9</th>
+                                <th scope="col" class="colTeam"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">8:00 AM - Field 3</th>
+                                    <td>DIMEGLIO SEPTIC</td>
+                                    <td>SHOWCASE SPORTS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9:00 AM - Field 3</th>
+                                    <td>BAGLIANI'S MARKET</td>
+                                    <td>EMERY DEMOLITION</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:00 AM - Field 3</th>
+                                    <td>HOMESTEAD BARBERSHOP</td>
+                                    <td>BASSETTI PHOTOS</td>
+                                </tr>
+                                <tr class="table-warning table-bordered border-dark">
+                                    <th scope="row">10:30 AM - Field 3B</th>
+                                    <td>SJ FAMILY MEDICAL CENTER</td>
+                                    <td>BROTHER'S PIZZA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:00 AM - Field 3</th>
+                                    <td>SCA EMPLOYMENT AGENCY</td>
+                                    <td>AQUEDUCT PLUMBING</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-20"></div>
+                        <!-- Week 10 -->
+                        <table class="table table-sm table-bordered border-dark table-striped">
+                            <thead class="table-bgColor table-bordered border-dark text-center">
+                            <tr>
+                                <th scope="col" class="colDate">11/19/22</th>
+                                <th scope="col" class="colTeam">WEEK 10</th>
+                                <th scope="col" class="colTeam"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">8:00 AM - Field 3</th>
+                                    <td>EMERY DEMOLITION</td>
+                                    <td>HOMESTEAD BARBERSHOP</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9:00 AM - Field 3</th>
+                                    <td>SCA EMPLOYMENT AGENCY</td>
+                                    <td>BROTHER'S PIZZA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:00 AM - Field 3</th>
+                                    <td>SJ FAMILY MEDICAL CENTER</td>
+                                    <td>SHOWCASE SPORTS</td>
+                                </tr>
+                                <tr class="table-warning table-bordered border-dark">
+                                    <th scope="row">10:30 AM - Field 3B</th>
+                                    <td>BAGLIANI'S MARKET</td>
+                                    <td>DIMEGLIO SEPTIC</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:00 AM - Field 3</th>
+                                    <td>BASSETTI PHOTOS</td>
+                                    <td>AQUEDUCT PLUMBING</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-20"></div>
+                    </div>
+                </div>
+            
+           
+                </div>
+            </div>
+             <!-- End Body -->
+        </main>
+    </div>
+
+    <footer class="border-top footer mt-auto">
+        <div class="container">
+            &copy; 2022 - Hammonton Soccer - All Rights Reserved
+        </div>
+    </footer>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+</body>
+</html>
