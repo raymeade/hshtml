@@ -203,6 +203,15 @@ footer {
     background-color: #fff;
 }
 
+th, tr {
+    white-space: nowrap;
+}
+
+.photoItem {
+    margin: 0;
+    padding: 0;
+    background-color: #f0eef0;
+}
 .newsIcon {
     height:70px;
 }
@@ -212,7 +221,7 @@ footer {
 }
 
 .newsContent {
-    padding-top: 5px;
+    padding-top: 2.2px;
 }
 
 #fieldStatus {
@@ -290,6 +299,11 @@ footer {
 
 .table-bgColor {
     background-color: #27378f !important;
+    color: #fff;
+}
+
+.table-bgColor2 {
+    background-color: #4c90e2 !important;
     color: #fff;
 }
 
