@@ -318,6 +318,10 @@ th, tr {
 .colDate, .colTeam {
     font-weight: 400;
 }
+
+.strike {
+    text-decoration: line-through;   
+}
 /* End Schedule Page */
 
 
