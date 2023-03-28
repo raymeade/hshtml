@@ -322,6 +322,14 @@ th, tr {
 .strike {
     text-decoration: line-through;   
 }
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #3779c7;
+    color: #fff;
+}
+
+
 /* End Schedule Page */
 
 
