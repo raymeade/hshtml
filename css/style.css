@@ -323,12 +323,6 @@ th, tr {
     text-decoration: line-through;   
 }
 
-.table-striped>tbody>tr:nth-child(odd)>td,
-.table-striped>tbody>tr:nth-child(odd)>th {
-    background-color: #3779c7;
-    color: #fff;
-}
-
 
 /* End Schedule Page */
 
@@ -342,6 +336,8 @@ No media query for `xs` since this is the default in Bootstrap */
     .message {
         visibility: visible;
     }
+
+
  }
 
  /* Medium devices (tablets, 768px and up) */
