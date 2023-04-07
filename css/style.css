@@ -120,7 +120,16 @@ footer {
 }
 
 
+
 /********** Index Page  **********/
+
+/* Banner Logo */
+.bannerLogo {
+    width: 100%;
+}
+
+/* End Banner Logo */
+
 
 /* Slide Show */
 
