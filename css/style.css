@@ -7,6 +7,10 @@ body {
     background-color: #f0eef0;
 }
 
+.visible {
+    display: none;
+}
+
 .announcements {
     background-color: #000;
     color: #fff;
@@ -331,6 +335,8 @@ th, tr {
 .strike {
     text-decoration: line-through;   
 }
+
+
 
 
 /* End Schedule Page */
