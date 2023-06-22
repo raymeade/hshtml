@@ -146,7 +146,8 @@ footer {
     background-color: rgba(0, 0, 0, .5);
     color: #fff;
     font-size: 1.1em;
-    height: 110px;
+    height: 150px;
+    width: 75%;
 }
 
 .carousel-caption > h2 {
