@@ -301,11 +301,37 @@ th, tr {
 /* Schedule Page */
 .table {
     background-color: #fff;
+    font-size: 10px;
+    table-layout: fixed;
+}
+
+.table-condensed>thead>tr>th, 
+.table-condensed>thead>tr>td, 
+.table-condensed>tbody>tr>th, 
+.table-condensed>tbody>tr>td, 
+.table-condensed>tfoot>tr>th, 
+.table-condensed>tfoot>tr>td {
+    padding: 5px;
+}
+
+th+.scheduleHeader {
+    font-weight: 600;
+}
+
+.scheduleHeader {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
 }
 
 .scheduleLogo {
     height: 100px;
     display: none;
+}
+
+thead {
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .table-bgColor {
@@ -322,11 +348,79 @@ th, tr {
     width: 20%;
 }
 
-.colTeam {
-    width: 35%;
+.colField {
+    width: 15%;
 }
 
-.colDate, .colTeam {
+.colTeam {
+    width: 65%;
+}
+
+/* Senior Games */
+.colSrDate {
+    width: 14%;
+}
+
+.colSrField {
+    width: 8%;
+}
+
+.colSrTeam {
+    width: 33%;   
+}
+.colResults {
+    width: 12%;
+}
+
+.scheduleText {
+    font-size: 10px;
+}
+
+/* Standings */
+.standingsPlace {
+    width: 5%;
+    text-align: center;
+}
+.standingsTeam {
+    width: 37%;
+}
+.standingsWins {
+    width: 8%;
+    text-align: center;
+}
+.standingsLosses {
+    width: 8%;
+    text-align: center;
+}
+.standingsDraws {
+    width: 8%;
+    text-align: center;
+}
+.standingsGoalsFor {
+    width: 8%;
+    text-align: center;
+}
+
+.standingsGoalsAgainst {
+    width: 8%;
+    text-align: center;
+}
+
+.standingsGoalsDiff {
+    width: 8%;
+    text-align: center;
+}
+
+.standingsPoints {
+    width: 10%;
+    text-align: center;
+}
+
+.team {
+    text-align: center;
+}
+
+.colDate, .colField, .colTeam {
     font-weight: 400;
 }
 
@@ -334,7 +428,9 @@ th, tr {
     text-decoration: line-through;   
 }
 
-
+.poRules {
+    font-size: 13px;
+}
 
 
 /* End Schedule Page */
@@ -361,8 +457,13 @@ No media query for `xs` since this is the default in Bootstrap */
         left: 10px;
     }
 
-    
+    .table, thead {
+        font-size: 14px;
+    }
 
+    .scheduleText {
+        font-size: 14px;
+    }
  }
 
  
@@ -403,6 +504,19 @@ No media query for `xs` since this is the default in Bootstrap */
         top: 0;
         left: 10px;
     }
+
+    .table, thead {
+        font-size: 16px;
+    }
+
+    .scheduleText {
+        font-size: 16px;
+    }
+
+    .poRules {
+        font-size: 16px;
+    }
+
  }
 
  /* X-Large devices (large desktops, 1200px and up) */
