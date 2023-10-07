@@ -50,9 +50,9 @@ nav {
 }
 
 .hysaLogo {
-    height: 120px;
+    height: 100px;
     position: relative;
-    top: -40px;
+    top: -20px;
     left: 10px;
     -webkit-filter: drop-shadow(1px 6px 3px #000);
     filter: drop-shadow(1px 6px 3px #000);
@@ -231,6 +231,7 @@ th, tr {
 
 .newsImage {
     float: left;
+    margin-right: 5px;
 }
 
 .newsContent {
@@ -437,6 +438,16 @@ thead {
 
 /* End Schedule Page */
 
+.colPhotoTime {
+    width: 20%;
+    
+}
+
+.colPhotoTeam {
+    width: 80%;
+}
+
+
 
 /* Media Queries */
 /* X-Small devices (portrait phones, less than 576px)
@@ -519,6 +530,14 @@ No media query for `xs` since this is the default in Bootstrap */
         font-size: 16px;
     }
 
+    .colPhotoTime {
+        width: 10%;
+        
+    }
+    
+    .colPhotoTeam {
+        width: 90%;
+    }
  }
 
  /* X-Large devices (large desktops, 1200px and up) */
