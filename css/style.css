@@ -63,6 +63,12 @@ nav {
     z-index: 3;
 }
 
+.carousel img {
+
+    margin: auto;
+
+}
+
 .navbar-toggler {
     position: relative;
     top: -20px;
