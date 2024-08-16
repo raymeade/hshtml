@@ -8,7 +8,7 @@ body {
 }
 
 .visible {
-    display: none;
+    display: visible;
 }
 
 .visibleStandings {
