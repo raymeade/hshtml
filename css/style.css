@@ -12,7 +12,7 @@ body {
 }
 
 .visibleStandings {
-    display: none;
+    display: visible;
 }
 
 .spcial
